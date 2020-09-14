@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/yuda-charles/mango-ui/issues"
   },
-  "homepage": "https://github.com/yuda-charles/mango-ui#readme"
+  "homepage": "https://github.com/yuda-charles/mango-ui#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
