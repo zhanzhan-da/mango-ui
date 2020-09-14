@@ -34,3 +34,7 @@
 .m-button.icon-right > .content {
   order: 1;
 }
+.m-icon {
+  width: 1em;
+  height: 1em;
+}
