@@ -12444,9 +12444,14 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {
   props: {
     icon: {},
+    loading: {
+      type: Boolean,
+      default: false
+    },
     iconPosition: {
       type: String,
       default: 'left',
@@ -12474,14 +12479,24 @@ exports.default = _default;
     "button",
     {
       staticClass: "m-button",
-      class: ((_obj = {}), (_obj["icon-" + _vm.iconPosition] = true), _obj)
+      class: ((_obj = {}), (_obj["icon-" + _vm.iconPosition] = true), _obj),
+      on: {
+        click: function($event) {
+          return _vm.$emit("click")
+        }
+      }
     },
     [
-      _vm.icon
+      _vm.icon && !_vm.loading
         ? _c("m-icon", { staticClass: "icon", attrs: { name: _vm.icon } })
         : _vm._e(),
       _vm._v(" "),
-      _c("m-icon", { staticClass: "loading", attrs: { name: "loading" } }),
+      _vm.loading
+        ? _c("m-icon", {
+            staticClass: "loading icon",
+            attrs: { name: "loading" }
+          })
+        : _vm._e(),
       _vm._v(" "),
       _c("div", { staticClass: "content" }, [_vm._t("default")], 2)
     ],
@@ -12603,7 +12618,10 @@ _vue.default.component('m-button', _button.default);
 _vue.default.component('m-icon', _icon.default);
 
 new _vue.default({
-  el: '#app'
+  el: '#app',
+  data: {
+    loading1: false
+  }
 });
 },{"vue":"node_modules/vue/dist/vue.common.js","./button":"src/button.vue","./icon":"src/icon.vue"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

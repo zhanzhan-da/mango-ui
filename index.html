@@ -33,13 +33,14 @@
 </head>
 <body>
 <div id="app">
-    <m-button icon="settings">
+    <m-button :loading="loading1" @click="loading1 = !loading1">按钮</m-button>
+    <m-button icon="settings" :loading="true">
         按钮
     </m-button>
     <m-button >
         按钮
     </m-button>
-    <m-button icon="settings" icon-position="right">
+    <m-button icon="settings" icon-position="right" :loading="true">
         按钮
     </m-button>
 
