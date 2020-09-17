@@ -7,11 +7,12 @@
 <script>
 import "./svg";
 export default {
+  name: "MangoIcon",
   props: ["name"],
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .m-icon {
   width: 1em;
   height: 1em;
