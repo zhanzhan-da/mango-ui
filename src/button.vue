@@ -13,26 +13,26 @@
 </template>
 
 <script>
-import Vue from "vue";
-import Icon from "./icon";
-Vue.component("m-icon", Icon);
+import Vue from "vue"
+import Icon from "./icon"
+Vue.component("m-icon", Icon)
 export default {
   name: "MangoButton",
   props: {
     icon: {},
     loading: {
       type: Boolean,
-      default: false,
+      default: false
     },
     iconPosition: {
       type: String,
       default: "left",
       validator(value) {
-        return value === "left" || value === "right";
-      },
-    },
-  },
-};
+        return value === "left" || value === "right"
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
