@@ -30,16 +30,12 @@
   </head>
   <body>
     <div id="app">
-      <m-row>
-        <m-col span="5"></m-col>
-        <m-col offset="2"></m-col>
-        <m-col></m-col>
-        <m-col></m-col>
+      <m-row style="border: 1px solie red;" gutter="20">
+        <m-col :pc="{span:4}" style="height: 100px; background-color: aqua;" span="12">1</m-col>
+        <m-col :pc="{span:20}" style="height: 100px; background-color: red;" span="12">1</m-col>
+        
       </m-row>
-      <m-row gutter="20">
-        <m-col></m-col>
-        <m-col></m-col>
-      </m-row>
+
       <hr />
       <m-input value="1345aaaaa" disabled></m-input>
       <m-input value="13aa" @change="inputChange"></m-input>
@@ -64,8 +60,6 @@
         <m-button>更多</m-button>
         <m-button icon="right" icon-position="right">下一页</m-button>
       </m-button-group>
-
-      <div id="test"></div>
     </div>
     <script src="./src/app.js"></script>
   </body>
