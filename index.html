@@ -29,15 +29,39 @@
         border:1px solid #666;
         min-height:100px;
       }
+      .sider {
+    background: #333;
+    width: 150px;
+  }
+ 
+  .header {
+    background: #999;
+    height: 100px;
+  }
+  .footer {
+    background: #ccc;
+    height: 50px;
+  }
     </style>
   </head>
   <body>
     <div id="app">
-      <m-layout>
-        <m-header class="demo"></m-header>
-        <m-content class="demo"></m-content>
-        <m-footer class="demo"></m-footer>
+      <m-layout style="height: 300px">
+        <m-header style="height: 42px;background-color: #72BCEF"></m-header>
+        <m-layout >
+           <m-sider style="background-color:#51A0EA;width:200px"></m-sider>
+            <m-content style="background-color: #488EE9"></m-content>
+        </m-layout>
+        <m-footer style="height: 42px;background-color:#7DBCEA"></m-footer>
+    </m-layout>
+    <m-layout style="height: 300px;margin: 30px 0">
+      <m-header style="height: 42px;background-color: #72BCEF"></m-header>
+      <m-layout >
+        <m-content style="background-color: #488EE9"></m-content>
+        <m-sider style="background-color:#51A0EA;width:200px"></m-sider>
       </m-layout>
+      <m-footer style="height: 42px;background-color:#7DBCEA"></m-footer>
+    </m-layout>
     </div>
     <script src="./src/app.js"></script>
   </body>

@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'MangoContent',
   data() {
     return {};
   }
@@ -13,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .content{
-        
-    }
+.content {
+    flex-grow:1;
+}
 </style>
