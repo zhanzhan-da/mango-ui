@@ -10,6 +10,8 @@ import Header from './header';
 import Sider from './sider';
 import Content from './content';
 import Footer from './footer';
+import Toast from './toast';
+import plugin from './plugin';
 
 Vue.component('m-button', Button);
 Vue.component('m-icon', Icon);
@@ -22,6 +24,12 @@ Vue.component('m-header', Header);
 Vue.component('m-sider', Sider);
 Vue.component('m-content', Content);
 Vue.component('m-footer', Footer);
+Vue.component('m-toast', Toast);
+Vue.use(plugin);
+
+import createElement from 'vue';
+
+const h = createElement;
 
 new Vue({
   el: '#app',
@@ -30,8 +38,27 @@ new Vue({
     message: 'hi'
   },
   methods: {
-    inputChange(e) {
-      console.log(e);
+    showToast1() {
+      this.showToast('top');
+    },
+    showToast2() {
+      this.showToast('middle');
+    },
+    showToast3() {
+      this.showToast('bottom');
+    },
+    showToast(position) {
+      this.$toast(`这是一条信息`, {
+        position,
+        enableHtml: false,
+        closeButton: {
+          text: '关闭',
+          callback() {
+            console.log('关闭');
+          }
+        },
+        autoClose: 3
+      });
     }
   }
 });
