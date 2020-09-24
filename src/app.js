@@ -12,6 +12,11 @@ import Content from './content';
 import Footer from './footer';
 import Toast from './toast';
 import plugin from './plugin';
+import Tabs from './tabs';
+import TabsHead from './tabs-head';
+import TabsBody from './tabs-body';
+import TabsItem from './tabs-item';
+import TabsPane from './tabs-pane';
 
 Vue.component('m-button', Button);
 Vue.component('m-icon', Icon);
@@ -26,6 +31,11 @@ Vue.component('m-content', Content);
 Vue.component('m-footer', Footer);
 Vue.component('m-toast', Toast);
 Vue.use(plugin);
+Vue.component('m-tabs', Tabs);
+Vue.component('m-tabs-head', TabsHead);
+Vue.component('m-tabs-body', TabsBody);
+Vue.component('m-tabs-item', TabsItem);
+Vue.component('m-tabs-pane', TabsPane);
 
 import createElement from 'vue';
 
