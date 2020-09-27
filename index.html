@@ -26,34 +26,66 @@
     </style>
   </head>
   <body>
-    <div id="app">
-      <m-tabs :selected.sync="selectedTab" @update:selected="yyy">
-        <m-tabs-head>
-          <template slot="actions">
-            <button>设置</button>
+    <div id="app" style="padding-left: 100px;">
+      <div style="overflow: hidden; padding-top: 150px; padding-bottom: 40px;">
+        
+        <m-popover position="bottom">
+          <template slot="content" slot-scope="{close}">
+            <div>文字</div>
+            <div>popover <a href="http://qq.com">看新网</a> 内容</div>
+            <m-button @click="close">关闭</m-button>
           </template>
-          <m-tabs-item name="woman" disabled>
-            <m-icon name="settings"></m-icon>美女
-          </m-tabs-item>
-          <m-tabs-item name="finance">
-            财经
-          </m-tabs-item>
-          <m-tabs-item name="sports">
-            体育
-          </m-tabs-item>
-        </m-tabs-head>
-        <m-tabs-body>
-          <m-tabs-pane name="woman">
-            美女相关资讯
-          </m-tabs-pane>
-          <m-tabs-pane name="finance">
-            财经相关资讯
-          </m-tabs-pane>
-          <m-tabs-pane name="sports">
-            体育相关资讯
-          </m-tabs-pane>
-        </m-tabs-body>
-      </m-tabs>
+          <m-button>点我</m-button>
+        </m-popover>
+
+        <m-popover position="top">
+          <template slot="content" slot-scope="{close}">
+            <div>popover内容
+              <m-button @click="close">关闭</m-button>
+            </div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+        <m-popover position="left">
+          <template slot="content">
+            <div>popover内容</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+        <m-popover position="right">
+          <template slot="content">
+            <div>popover内容</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+      </div>
+      <div style="overflow: hidden; padding-bottom: 150px;">
+        <m-popover position="bottom" trigger="hover">
+          <template slot="content">
+            <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
+            <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+        <m-popover position="top" trigger="hover">
+          <template slot="content">
+            <div>popover内容</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+        <m-popover position="left" trigger="hover">
+          <template slot="content">
+            <div>popover内容</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+        <m-popover position="right" trigger="hover">
+          <template slot="content">
+            <div>popover <a href="http://qq.com">看新网</a> 内容</div>
+          </template>
+          <m-button>点我</m-button>
+        </m-popover>
+      </div>
     </div>
     <script src="./src/app.js"></script>
   </body>
