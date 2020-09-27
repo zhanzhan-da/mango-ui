@@ -29,7 +29,7 @@ describe('Tabs', () => {
           <m-tabs-item name="woman"> 美女 </m-tabs-item>
           <m-tabs-item name="finance"> 财经 </m-tabs-item>
           <m-tabs-item name="sports"> 体育 </m-tabs-item>
-        </-tabs-head>
+        </m-tabs-head>
         <m-tabs-body>
           <m-tabs-pane name="woman"> 美女相关资讯 </m-tabs-pane>
           <m-tabs-pane name="finance"> 财经相关资讯 </m-tabs-pane>
