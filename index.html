@@ -26,66 +26,12 @@
     </style>
   </head>
   <body>
-    <div id="app" style="padding-left: 100px;">
-      <div style="overflow: hidden; padding-top: 150px; padding-bottom: 40px;">
-        
-        <m-popover position="bottom">
-          <template slot="content" slot-scope="{close}">
-            <div>文字</div>
-            <div>popover <a href="http://qq.com">看新网</a> 内容</div>
-            <m-button @click="close">关闭</m-button>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-
-        <m-popover position="top">
-          <template slot="content" slot-scope="{close}">
-            <div>popover内容
-              <m-button @click="close">关闭</m-button>
-            </div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-        <m-popover position="left">
-          <template slot="content">
-            <div>popover内容</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-        <m-popover position="right">
-          <template slot="content">
-            <div>popover内容</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-      </div>
-      <div style="overflow: hidden; padding-bottom: 150px;">
-        <m-popover position="bottom" trigger="hover">
-          <template slot="content">
-            <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
-            <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-        <m-popover position="top" trigger="hover">
-          <template slot="content">
-            <div>popover内容</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-        <m-popover position="left" trigger="hover">
-          <template slot="content">
-            <div>popover内容</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-        <m-popover position="right" trigger="hover">
-          <template slot="content">
-            <div>popover <a href="http://qq.com">看新网</a> 内容</div>
-          </template>
-          <m-button>点我</m-button>
-        </m-popover>
-      </div>
+    <div id="app" style="padding:100px;">
+        <m-collapse>
+          <m-collapse-item title="标题1">内容1</m-collapse-item>
+          <m-collapse-item title="标题2">内容2</m-collapse-item>
+          <m-collapse-item title="标题3">内容3</m-collapse-item>
+        </m-collapse>
     </div>
     <script src="./src/app.js"></script>
   </body>
