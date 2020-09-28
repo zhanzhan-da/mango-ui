@@ -52,6 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 $grey: #ddd;
 $border-radius: 4px;
 .collapse-item {
@@ -78,7 +79,9 @@ $border-radius: 4px;
     }
   }
   > .content {
+
     padding: 8px;
+    
   }
 }
 </style>
