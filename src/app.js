@@ -51,7 +51,8 @@ new Vue({
   el: '#app',
   data: {
     loading1: false,
-    message: 'hi'
+    message: 'hi',
+    selectedTab: ['2','1']
   },
   methods: {
     showToast1() {
