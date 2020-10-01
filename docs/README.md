@@ -7,11 +7,11 @@ actionText: 快速上手 →
 actionLink: /basic/usage
 features:
 - title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+  details: 以简洁易上手为中心思想，以简易的配置帮助你构建项目
 - title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  details: Vue是一套用于构建用户界面的渐进式JavaScript框架，目前绝大部分前端人员都在使用。
+- title: 持续集成
+  details: 项目在构建之时给组件写测试，并通过 Travis-CI 做了持续集成，保证了项目的高质量。
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 

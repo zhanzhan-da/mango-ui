@@ -6,7 +6,7 @@ module.exports = {
         nav: [
           { text: '主页', link: '/' },
           { text: '文档', link: '/basic/install' },
-          { text: 'GitHub', link: 'https://www.baidu.com' },
+          { text: 'GitHub', link: 'https://github.com/zhanzhan-da/mango-ui' },
         ],
         sidebar: [
           {
