@@ -15,7 +15,7 @@ title: 'Grid - 栅格'
   <div>
     <m-row>
       <m-col>col-24</m-col>
-    </im-row>
+    </m-row>
     <m-row>
       <m-col span="12">col-12</m-col>
       <m-col span="12">col-12</m-col>
