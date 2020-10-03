@@ -1,6 +1,6 @@
 {
   "name": "mangoing-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ui框架",
   "main": "dist/index.js",
   "scripts": {
