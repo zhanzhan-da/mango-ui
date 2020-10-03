@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/mango-ui/',
     title: '芒果UI官网',
     description: '一个好用的UI组件库',
     themeConfig: {
